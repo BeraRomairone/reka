@@ -5,14 +5,40 @@ body{
     /* font-family: 'Rajdhani', sans-serif; */
     font-family: 'Rajdhani', sans-serif;
     font-weight: 300;
+    /* background-image: url("bera.jpg"); */
     background-color: rgb(255, 255, 255)
     /* background-image: url("invisible.jpg"); */
     
 }
 
-.menu{
-    background-color: rgb(220, 151, 151); 
-    border-radius: 2px;
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(215, 35, 35, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
+.navbar-toggler-icon:active, .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237, 59, 59,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
+.overlap{
+    position:absolute;
+    top:75px;
+    font-size: 2.5em;
+    padding-left: 20px;
+    color: rgb(220, 151, 151); 
+}
+
+.overlap:hover{
+    
+    transition: 0.7s;
+    color: rgba(220, 151, 151, 0.2); 
+ 
 }
 
 body:img{
@@ -48,12 +74,11 @@ p{
 
 .eventData{
     font-size: 1em;
-    
-
 }
 .eventDescription{
     font-size: em;
     padding-left: 3.9em;
+    
 }
 
 .title{
@@ -103,7 +128,7 @@ p{
 }
 
 .myName{
-    font-size: 3em;
+    font-size: 4em;
     padding-top: 20px;;
 }
 
@@ -113,7 +138,7 @@ p{
 
 .descrizione{
     color: rgb(215, 35, 35)!important; 
-    padding-top: 0.5em;
+    padding-top: 1.5em;
     font-size: 1.1em;
     line-height: 150%;
 }
